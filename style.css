@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    /*background: #aaa;*/
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav{
+    /*display: flex;*/
+    padding: 20px;
+}
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/*.paket-pilihan > h1{
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+.paket-pilihan > .card{
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.paket-pilihan > .card > .box{
+    flex-wrap: wrap;
+    height: 110px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f7f6f4;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+
+}
+.card > .box > h1{
+    color: #9b9b9a;
+    font-size: 1.5em;
+}
+.card > .box > p{
+    color: #c5c6c5;
+    font-size: 1.2em;
+}
+*/
+.paket-satuan > .card{
+    display: flex;
+    padding: 20px;
+    gap: 8px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.paket-satuan > h1{
+    font-size: 1.5rem;
+    margin-left: 20px;
+
+}
+.paket-satuan > .card > .box-menu-satuan{
+    background: #fd862f;
+    height: 200px;
+    width: 32%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+}
+.paket-satuan > .card > .box-menu-satuan > .btn-buy{
+    border: 1px solid #eed;
+    padding: 8px 20px;
+    border-top-right-radius:  15px;
+}
+.paket-satuan > .card > .box-menu-satuan > .btn-buy:hover{
+    transition: ease .2s;
+    color: orange;
+    background: #fff;
+}
+.paket-satuan > .card > .box-menu-satuan > .gambar{
+    position: absolute;
+    bottom: -100px;
+    right: -40px;
+    content: '';
+    background: #fb7b1d;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    z-index: -99999;
+    overflow: hidden;
+}
+.paket-satuan > .card > .box-menu-satuan > .gambar > img{
+    width: 180px;
+    /*margin-top: -25px;*/
+    margin: -25px -10px 0 0;
+
+}
+.paket-satuan > .card > .box-menu-satuan > h1{
+    color: #fff;
+}
+.paket-satuan > .card > .box-menu-satuan > p {
+    color: #f2efef;
+}
+.paket-satuan > .card > .box-menu-satuan > a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/***************PAKET HEMAT****************/
+.paket-hemat{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.paket-hemat > h1{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+/*.paket-hemat > .images-slide{
+    width: 100%;
+    min-height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+}*/
+.paket-hemat > .images-slide > img{
+    width: 100%;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+footer{
+    padding: 250px 0 0 0;
+}
+
+footer > p{
+    text-align: center;
+}
+
+
+/************** detail produk ****************/
+
+main{
+    padding: 20px;
+    height: 91vh;
+}
+.container-small{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img-produk{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.caption > p,h3{
+    padding-top: 10px;
+}
+.button{
+    margin-top: 30px; 
+}
+.btn-buyNow{
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-top-right-radius: 10px;
+    background: #fff;
+}
+.btn-buyNow:hover{
+    transition: .5s;
+    cursor: pointer;
+    background: blue;
+}
+@media(min-width: 768px) {
+   
+    .paket-satuan > .card > .box-menu-satuan{
+        background: #fd862f;
+        height: 200px;
+        width: 32%;
+    }
+    .container{
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+
+    /***************** Detail Produk *******************/
+     .container-small{
+        width: 100%;
+        padding: 0 25%;
+        /*background: yellow;*/
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /***************** Detail Produk *******************/
+}
+
+@media(max-width: 567px) {
+    .paket-satuan > .card{
+        gap: 13px;
+
+    }
+    .paket-satuan > .card > .box-menu-satuan{
+        height: 200px;
+        width: 48%;
+    }
+    .paket-satuan > .card > .box-menu-satuan > .gambar > img{
+        width: 150px;
+        margin-top: -10px;
+        margin-left: 30px;
+
+    }
+}
+
+@media(max-width: 367px){
+    .paket-satuan > .card > .box-menu-satuan{
+        height: 200px;
+        width: 47.5%;
+    }
+}
+
